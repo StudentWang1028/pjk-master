@@ -1,0 +1,17 @@
+Begin Time:2023-04-25T18:50:21.306
+[2023-04-25T18:50:21.306 info Netsdk:58964 9376:16576 dhnetsdk.cpp:302]Enter CLIENT_SetAutoReconnect:[cbAutoConnect=00000202D56A0050, dwUser=0000000000000000].
+[2023-04-25T18:50:21.306 info Netsdk:58964 9376:16576 dhnetsdk.cpp:304]Leave CLIENT_SetAutoReconnect.
+[2023-04-25T18:50:21.307 info Netsdk:58964 9376:16576 dhnetsdk.cpp:326]Enter CLIENT_SetConnectTime:[nWaitTime=5000, nTryTimes=1].
+[2023-04-25T18:50:21.307 info Netsdk:58964 9376:16576 dhnetsdk.cpp:339]Leave CLIENT_SetConnectTime.
+[2023-04-25T18:50:21.307 info Netsdk:58964 9376:16576 dhnetsdk.cpp:352]Enter CLIENT_SetNetworkParam:[nWaittime=0, nConnectTime=10000, nConnectTryNum=0, nSubConnectSpaceTime=0, nGetDevInfoTime=3000, nConnectBufSize=0, nGetConnInfoTime=3000, nSearchRecordTime=0, nsubDisconnetTime=0, byNetType=0, byPlaybackBufSize=0, bDetectDisconnTime=0, bKeepLifeInterval=0, nPicBufSize=0].
+[2023-04-25T18:50:21.307 info Netsdk:58964 9376:16576 dhnetsdk.cpp:367]Leave CLIENT_SetNetworkParam.
+[2023-04-25T18:50:21.309 info Netsdk:58964 9376:16576 dhnetsdk.cpp:991]Enter CLIENT_LoginWithHighLevelSecurity. pstInParam:00000202D8037130, pstOutParam:00000202D8B06D00.
+[2023-04-25T18:50:21.309 info Netsdk:58964 9376:16576 dhnetsdk.cpp:1007]IP:192.168.1.108, port:37777, SpeCap:0, CapParam:0000000000000000, TLSCap:0
+[2023-04-25T18:50:21.349 info Netsdk:58964 9376:16576 dhnetsdk.cpp:1054]Leave CLIENT_LoginWithHighLevelSecurity. error:0, login ID:-609030720.
+[2023-04-25T18:50:21.349 info Netsdk:58964 9376:16576 dhnetsdk.cpp:8441]Enter CLIENT_SetSnapRevCallBack. [OnSnapRevMessage=00000202D56A0090, dwUser=0000000000000000.]
+[2023-04-25T18:50:21.349 info Netsdk:58964 9376:16576 dhnetsdk.cpp:8444]Leave CLIENT_SetSnapRevCallBack.
+[2023-04-25T18:50:21.350 info Netsdk:58964 9376:16576 dhnetsdk.cpp:8481]Enter CLIENT_SnapPictureEx. [lLoginID=-609030720, par=00000202D7B40F20, reserved=0000000000000000.]
+[2023-04-25T18:50:21.350 info Netsdk:58964 9376:16576 dhnetsdk.cpp:8501]Leave CLIENT_SnapPictureEx. ret:1.
+[2023-04-25T18:50:24.355 info Netsdk:58964 9376:16576 dhnetsdk.cpp:1075]Enter CLIENT_Logout. lLoginID:-609030720.
+[2023-04-25T18:50:24.356 error Netsdk:58964 9376:16576 TPTCPClient.cpp:723]Device is not online, ip:192.168.1.108
+[2023-04-25T18:50:24.356 info Netsdk:58964 9376:16576 dhnetsdk.cpp:1097]Leave CLIENT_Logout. ret:1

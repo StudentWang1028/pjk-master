@@ -1,0 +1,21 @@
+Begin Time:2023-04-26T13:00:26.674
+[2023-04-26T13:00:26.675 info Netsdk:58964 21256:20576 AVNetSDKMgr.cpp:504]Load avnetsdk library dynamically
+[2023-04-26T13:00:26.680 info Netsdk:58964 21256:20576 AVNetSDKMgr.cpp:549]avnetsdk module handle: 0000026E17700000
+
+[2023-04-26T13:00:26.680 info Netsdk:58964 21256:20576 AVNetSDKMgr.cpp:823]Load configsdk dynamically
+[2023-04-26T13:00:26.681 info Netsdk:58964 21256:20576 dhnetsdk.cpp:302]Enter CLIENT_SetAutoReconnect:[cbAutoConnect=0000026E15E70050, dwUser=0000000000000000].
+[2023-04-26T13:00:26.682 info Netsdk:58964 21256:20576 dhnetsdk.cpp:304]Leave CLIENT_SetAutoReconnect.
+[2023-04-26T13:00:26.684 info Netsdk:58964 21256:20576 dhnetsdk.cpp:326]Enter CLIENT_SetConnectTime:[nWaitTime=5000, nTryTimes=1].
+[2023-04-26T13:00:26.684 info Netsdk:58964 21256:20576 dhnetsdk.cpp:339]Leave CLIENT_SetConnectTime.
+[2023-04-26T13:00:26.684 info Netsdk:58964 21256:20576 dhnetsdk.cpp:352]Enter CLIENT_SetNetworkParam:[nWaittime=0, nConnectTime=10000, nConnectTryNum=0, nSubConnectSpaceTime=0, nGetDevInfoTime=3000, nConnectBufSize=0, nGetConnInfoTime=3000, nSearchRecordTime=0, nsubDisconnetTime=0, byNetType=0, byPlaybackBufSize=0, bDetectDisconnTime=0, bKeepLifeInterval=0, nPicBufSize=0].
+[2023-04-26T13:00:26.684 info Netsdk:58964 21256:20576 dhnetsdk.cpp:367]Leave CLIENT_SetNetworkParam.
+[2023-04-26T13:00:26.686 info Netsdk:58964 21256:20576 dhnetsdk.cpp:991]Enter CLIENT_LoginWithHighLevelSecurity. pstInParam:0000026E14E14ED0, pstOutParam:0000026E14E1B030.
+[2023-04-26T13:00:26.686 info Netsdk:58964 21256:20576 dhnetsdk.cpp:1007]IP:192.168.1.108, port:37777, SpeCap:0, CapParam:0000000000000000, TLSCap:0
+[2023-04-26T13:00:26.720 info Netsdk:58964 21256:20576 dhnetsdk.cpp:1054]Leave CLIENT_LoginWithHighLevelSecurity. error:0, login ID:367130208.
+[2023-04-26T13:00:26.722 info Netsdk:58964 21256:20576 dhnetsdk.cpp:8441]Enter CLIENT_SetSnapRevCallBack. [OnSnapRevMessage=0000026E15E70090, dwUser=0000000000000000.]
+[2023-04-26T13:00:26.722 info Netsdk:58964 21256:20576 dhnetsdk.cpp:8444]Leave CLIENT_SetSnapRevCallBack.
+[2023-04-26T13:00:26.723 info Netsdk:58964 21256:20576 dhnetsdk.cpp:8481]Enter CLIENT_SnapPictureEx. [lLoginID=367130208, par=0000026E14EA6130, reserved=0000000000000000.]
+[2023-04-26T13:00:26.723 info Netsdk:58964 21256:20576 dhnetsdk.cpp:8501]Leave CLIENT_SnapPictureEx. ret:1.
+[2023-04-26T13:00:29.724 info Netsdk:58964 21256:20576 dhnetsdk.cpp:1075]Enter CLIENT_Logout. lLoginID:367130208.
+[2023-04-26T13:00:29.724 error Netsdk:58964 21256:20576 TPTCPClient.cpp:723]Device is not online, ip:192.168.1.108
+[2023-04-26T13:00:29.724 info Netsdk:58964 21256:20576 dhnetsdk.cpp:1097]Leave CLIENT_Logout. ret:1

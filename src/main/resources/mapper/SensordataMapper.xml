@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hitwh.chemicalpark.mapper.SensordataMapper">
+    <resultMap id="BaseResultMap" type="com.hitwh.chemicalpark.entity.Sensordata">
+        <id column="sdid" property="sdid" />
+        <result column="cas" property="cas" />
+        <result column="datatype" property="datatype" />
+        <result column="sdata" property="sdata" />
+        <result column="datatime" property="datatime" />
+        <result column="pid" property="pid" />
+        <result column="sid" property="sid" />
+    </resultMap>
+
+
+    <select id="getSensordata" resultMap="BaseResultMap">
+        select distinct datatime,sdata,sdid,datatype
+        from sensordata,position
+        where position.pid=#{pid} and datatype=#{datatype}
+        order by sdid
+        desc LIMIT 5
+    </select>
+
+
+
+</mapper>

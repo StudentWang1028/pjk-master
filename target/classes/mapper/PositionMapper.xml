@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hitwh.chemicalpark.mapper.PositionMapper">
+<resultMap id="PositionWithSensordataMap" type="com.hitwh.chemicalpark.controller.dto.PositionWithSensordata">
+    <id column="pid" property="pid"/>
+    <result column="longitude" property="longitude"/>
+    <result column="latitude" property="latitude"/>
+    <result column="pname" property="pname"/>
+    <association property="sensordata" javaType="com.hitwh.chemicalpark.entity.Sensordata">
+        <id column="sdid" property="sdid"/>
+        <result column="sid" property="sid"/>
+        <result column="pid" property="pid"/>
+        <result column="cas" property="cas"/>
+        <result column="datatype" property="datatype"/>
+        <result column="sdata" property="sdata"/>
+        <result column="datatime" property="datatime"/>
+    </association>
+</resultMap>
+
+
+
+    <select id="selectPositionWithSensordata" resultMap="PositionWithSensordataMap">
+        SELECT
+            p.pid,
+            p.longitude,
+            p.latitude,
+            p.pname,
+            s.sdid,
+            s.sid,
+            s.cas,
+            s.datatype,
+            s.sdata,
+            s.datatime
+        FROM position p
+                 LEFT JOIN sensordata s ON p.pid = s.pid
+                 INNER JOIN (
+            SELECT
+                pid,
+                datatype,
+                MAX(datatime) AS max_datatime
+            FROM sensordata
+            GROUP BY pid, datatype
+        ) max_times ON s.pid = max_times.pid AND s.datatype = max_times.datatype AND s.datatime = max_times.max_datatime;
+    </select>
+
+
+
+</mapper>
+

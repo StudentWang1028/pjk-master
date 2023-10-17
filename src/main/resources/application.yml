@@ -1,0 +1,22 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/chemicalpark?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    url: jdbc:mysql://localhost:3306/chemicalpark?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&allowPublicKeyRetrieval=true
+    username: root
+    password: 2002wjx
+mybatis:
+  mapper-locations: classpath:mapper/*.xml #扫描所有mapper下的xml
+  #configuration:
+  #  log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true #自动驼峰映射
+#  map-underscore-to-camel-case: false
+#files:
+#  upload:
+#    path: D:\Springboot+Vue\chemicalparkdemo\files
